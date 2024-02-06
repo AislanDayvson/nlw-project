@@ -17,11 +17,16 @@ export function App() {
       <div className='h-px bg-slate-700' />
 
       <div className='grid grid-cols-3 auto-rows-[250px] gap-6'>
-        
-        <NewNoteCard/>
-        <NoteCards/>
-        <NoteCards/>
-        <NoteCards/>
+
+        <NewNoteCard />
+        <NoteCards note={{
+          date: new Date(),
+          content: 'Hellowwwww'
+        }} />
+        <NoteCards note={{
+          date: new Date(),
+          content: 'Teste'
+        }} />
       </div>
     </div>
   )
